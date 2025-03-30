@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="register-container"> 
+    <section id="register-form">
+      <h2>Create your Account</h2>
+       <form id="registerForm">
+         <input id="register-email" type="email" placeholder="Email" required>
+         <input id="register-password" type="password" placeholder="Password" required>
+         <input id="role" placeholder="Fleid of Interest">
+         <input type="text" id="username" placeholder="Username" required>
+         <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+         <br>
+         <select class="roles">
+            <option value="">(select one)</option>
+            <option value="student">Student</option>
+            <option value="mentor">Mentor</option>
+        </select>
+         <button type="submit">Submit</button>
+       </form>
+       <p>Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+</div>
+
+    <script src="home.js"></script>
+</body>
+</html>

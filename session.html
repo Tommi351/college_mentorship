@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">Search Mentor</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Book Your Mentorship Session</h1>
+        <p>
+          Take the next step in your academic and professional journey by
+          scheduling a session with our expert mentors.
+        </p>
+        </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form">
+        <h2 class="bookSession">Book Your Session</h2>
+        <form id="mentorship-booking-form">
+          <div class="form-group animate-form">
+            <label for="mentor">Select Mentor:</label>
+            <select id="mentor" name="mentor" required>
+              <option value="">Choose a mentor</option>
+              <option value="joseph-green">Joseph Green (Law)</option>
+              <option value="kyle-fraser">Kyle Fraser (Construction)</option>
+              <option value="bobby-krpan">
+                Bobby Krpan (AI)
+              </option>
+            </select>
+          </div>
+          <main>
+              <div class="booking-email">
+                <label for="email">Your Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="booking-date">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+    
+              <div class="booking-time">
+                <label for="time-slots">Select Time:</label>
+                <div id="time-slots" class="time-slots"></div>
+                <input type="hidden" id="time" name="time" required />
+              </div>
+    
+              <div class="booking-topic">
+                <label for="topic">Session Topic:</label>
+                <input
+                  type="text"
+                  id="topic"
+                  name="topic"
+                  placeholder="e.g., Career Guidance, Project Help"
+                  required
+                />
+              </div>
+    
+              <div class="booking-message">
+                <label for="message">Additional Information:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Any specific questions or areas you'd like to discuss?"
+                ></textarea>
+              </div>
+    
+              <button type="submit" class="book-btn">
+                Book Session
+              </button>
+            </form>
+          </section>
+          
+              <section class="booking-tips">
+                <h2>Tips for a Successful Mentorship Session</h2>
+                <ul class="tips-list">
+                  <li>1. Prepare specific questions or topics you want to discuss</li>
+                  <li>2. Review your mentor's background and expertise beforehand</li>
+                  <li>3. Be punctual and respectful of the mentor's time</li>
+                  <li>4. Take notes during the session for future reference</li>
+                  <li>5. Follow up with any additional questions after the session</li>
+                </ul>
+              </section>
+          </main>
+          <script src="session.js"></script>
+</body>
+</html>

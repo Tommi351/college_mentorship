@@ -1,0 +1,259 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #e3f2fd; 
+    color: #333333; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Home Page */
+header, footer {
+    background-color: #0c3ae1;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+header nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #01040d; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 0 20px 0 0;
+    display: flex;
+    justify-content: center;
+ }
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+main {
+    background-color: #f4f4f4;
+    color: #333333;
+    padding: 30px;
+}
+
+main h1, main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+    
+.cta-btn {
+    background-color: #80e0a7;
+    color: #ffffff;
+    margin: 5px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    color: blue;
+}
+
+footer {
+    background-color: #0c3ae1;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.quick-links {
+    background-color: blue;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: block;
+        text-align: center;
+        
+    }
+    main {
+        padding: 20px;
+    }
+    .cta-button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;                  
+}
+
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 70%;
+}
+
+section input {
+    width: 50%;
+    padding: 10px;
+    border: 3px solid lightgreen;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+/* Profiles */
+.mentor-grid {
+    border-radius: 8px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 70%;
+} /* Mentor Profiles */
+.mentor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.mentor-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+}
+
+.mentor-name {
+    font-size: 1.5rem;
+    color: #0c3ae1;
+    margin-bottom: 10px;
+}
+
+.mentor-bio,
+.mentor-skills,
+.mentor-availability,
+.mentor-sector {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #80e0a7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #64b97f;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: row;
+    }
+
+    .mentor-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Register Form */
+.register-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    max-width: 3000px;
+}
+
+#register-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 70%;
+}
+
+#register-form input {
+    width: 50%;
+    padding: 10px;
+    border: 3px solid lightgreen;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.roles {
+    margin: 10px auto;
+}
+
+/* Sessions */
+
+.session {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 600px;
+    border: 2px solid black;
+    min-height: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.join-session {
+    color: rgb(5, 34, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.join-session:hover {
+    background-color: rgb(244, 255, 27);
+}
+
+.booking-tips {
+    padding: 50px 80px;
+}
+.tips-list li {
+    margin-bottom: 40px;
+    padding: 5px;
+    position: relative;
+    transform: translateY(20px);
+}
+/* Headings */
+.bookSession {
+    color: rgb(80, 80, 209);
+}

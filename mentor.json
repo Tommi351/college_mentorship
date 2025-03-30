@@ -1,0 +1,25 @@
+ [
+    {
+        "name": "Joseph Green",
+        "bio": "A seasoned lawyer specializing in corporate law and negotiations. Joseph has a track record of closing high-stakes deals and guiding aspiring professionals.",
+        "skills": "Lawyer, Influencing/Negotiating, etc",
+        "availability": "Availabile",
+        "sector": "Law"
+    },
+
+    {
+       "name": "Kyle Fraser",
+       "bio": "An accomplished construction manager with over 15 years of experience in building large-scale infrastructure projects. Kyle is passionate about mentoring students interested in construction management, business operations, and project leadership.",
+       "skills": "Construction, Business, etc",
+       "availability": "Not Availabile",
+       "sector": "Construction"
+    },
+
+    {
+        "name": "Bobby Krpan",
+        "bio": "A forward-thinking project manager with expertise in artificial intelligence and emerging technologies. Bobby combines his technical knowledge with leadership skills to mentor individuals pursuing careers in tech innovation and AI development.",
+        "skills": "Project Management, AI, etc",
+        "availability": "Availabile",
+        "sector": "Tech"
+    }
+]

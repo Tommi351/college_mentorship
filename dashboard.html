@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - PEP Mentorship Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <img src="" class="profile-pic">
+            <h1>Welcome Back, Daniel!</h1>
+            <p>Role: Student</p>
+        </div>
+    </header>
+    <main class="dashboard-main">
+        <section class="dashboard-session">
+                <h2>Upcoming Sessions</h2>
+                <ul>
+                    <li class="session">
+                        <span class="session-date" datetime="2025-01-09">Date: Jan 9th, 2025</span>
+                        <br>
+                        <br>
+                        <span class="session-time" datetime="2025-01-09T15:00:00">Time: 9:00 am MDT</span>
+                        <br>
+                        <br>
+                        <span class="session-mentor">Mentor: Kyle Fraser</span>
+                        <br>
+                        <br>
+                        <button class="join-session"><a href="meeting.html"></a>Join</button>
+                    </li>
+            
+                    <li class="session">
+                        <span class="session-date" datetime="2025-02-14">Date: Feb 14th, 2025</span>
+                        <br>
+                        <br>
+                        <span class="session-time" datetime="2025-02-14T10:00:00">Time: 12:00pm MDT</span>
+                        <br>
+                        <br>
+                        <span class="session-mentor">Mentor: Bobby Krpan</span>
+                        <br>
+                        <br>
+                        <button class="join-session"><a href="meeting.html"></a>Join</button>
+                    </li>
+            
+                    <li class="session">
+                        <span class="session-date" datetime="2025-04-07">Date: Apr 7th, 2025</span>
+                        <br>
+                        <br>
+                        <span class="session-time" datetime="2025-04-07T12:00:00">Time: 3:00pm MDT</span>
+                        <br>
+                        <br>
+                        <span class="session-mentor">Mentor: Joseph Green</span>
+                        <br>
+                        <br>
+                        <button class="join-session"><a href="meeting.html"></a>Join</button>
+                    </li>
+                </ul>
+            </section>
+            
+            <section class="notifications">
+                <h2>Notifications</h2>
+                <p>You have a session tomorrow with Joseph at 12:00pm.</p>
+            </section>
+
+            <section class="book-new-session">
+                <h2>Book a New Session</h2>
+                <p>Need more guidance? Book a new session with our mentors.</p>
+                <a href="session.html" class="cta-button">Book a Session</a>
+              </section>
+            </main>
+        
+            <section class="quick-links">
+                <nav>
+                    <ul>
+                        <li><a href="profile.html">Search Mentor</a></li>
+                        <li><a href="session.html">Schedule Session</a></li>
+                        <li><a href="login.html" onclick="logout()">Log Out</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </main>
+
+        <script>
+            function Logout() {
+                localStorage.clear();
+                sessionStorage.clear();
+                window.location.href="login.html";
+            }
+        </script>
+
+        <script src="main.js"></script>
+        <script src="session.js"></script>
+</body>
+</html>
